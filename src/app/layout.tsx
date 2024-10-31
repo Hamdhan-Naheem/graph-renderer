@@ -20,9 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-screen overflow-hidden`}>
-        {children}
-      </body>
+      {/* not asked to change here, but for responsive design (especially on mobile), had to remove the overflow-hidden */}
+      <body className={`${inter.className} h-screen`}>{children}</body>
     </html>
   );
 }
